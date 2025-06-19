@@ -16,11 +16,11 @@ const Hero = () => {
       
       <div className="container mx-auto px-6 text-center relative z-10">
         <div className="animate-fade-in">
-          <div className="mb-8">
+          <div className="mb-8 flex justify-center">
             <img
               src="/lovable-uploads/e50d0189-1683-4e96-9cfd-0f802e1f8148.png"
               alt="Winstone Owino"
-              className="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto mb-6 border-4 border-zone-blue shadow-xl animate-scale-in"
+              className="w-40 h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 rounded-full mx-auto mb-6 border-4 border-zone-blue shadow-2xl animate-scale-in object-cover"
             />
           </div>
           
