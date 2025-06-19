@@ -26,6 +26,12 @@ const Contact = () => {
 
   const socialLinks = [
     {
+      icon: <Mail className="w-6 h-6" />,
+      label: "Email",
+      link: "mailto:winstoneothis@gmail.com",
+      color: "hover:bg-red-600"
+    },
+    {
       icon: <Linkedin className="w-6 h-6" />,
       label: "LinkedIn",
       link: "https://www.linkedin.com/in/winstone-owino",

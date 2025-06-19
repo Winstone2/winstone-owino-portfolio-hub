@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Heart, Linkedin, MessageCircle, Twitter } from 'lucide-react';
+import { Heart, Linkedin, MessageCircle, Twitter, Mail } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -36,6 +36,14 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Connect With Me</h4>
             <div className="flex space-x-4 mb-4">
+              <a
+                href="mailto:winstoneothis@gmail.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-red-600 p-3 rounded-lg hover:bg-red-700 transition-colors duration-200"
+              >
+                <Mail className="w-5 h-5" />
+              </a>
               <a
                 href="https://www.linkedin.com/in/winstone-owino"
                 target="_blank"
