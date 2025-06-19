@@ -18,7 +18,7 @@ const Hero = () => {
         <div className="animate-fade-in">
           <div className="mb-8 flex justify-center">
             <img
-              src="/lovable-uploads/e50d0189-1683-4e96-9cfd-0f802e1f8148.png"
+              src="/lovable-uploads/70c74e5a-799a-4344-b469-cfdb0025945f.png"
               alt="Winstone Owino"
               className="w-40 h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 rounded-full mx-auto mb-6 border-4 border-zone-blue shadow-2xl animate-scale-in object-cover"
             />
