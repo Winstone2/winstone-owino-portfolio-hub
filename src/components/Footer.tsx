@@ -10,21 +10,21 @@ const Footer = () => {
       <div className="container mx-auto px-6">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="text-2xl font-bold gradient-text mb-4">Winstone Owino</h3>
-            <p className="text-gray-300 leading-relaxed">
+            <h3 className="text-2xl font-playfair font-bold gradient-text mb-4">Winstone Owino</h3>
+            <p className="text-gray-300 leading-relaxed font-inter">
               Data Engineer specializing in digital health solutions and ETL analytics. 
               Transforming complex data into actionable insights for community health programs.
             </p>
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+            <h4 className="text-lg font-playfair font-semibold mb-4">Quick Links</h4>
             <ul className="space-y-2">
               {['About', 'Experience', 'Skills', 'Projects', 'Contact'].map((link) => (
                 <li key={link}>
                   <button
                     onClick={() => document.getElementById(link.toLowerCase())?.scrollIntoView({ behavior: 'smooth' })}
-                    className="text-gray-300 hover:text-zone-light-blue transition-colors duration-200"
+                    className="text-gray-300 hover:text-zone-light-blue transition-colors duration-200 font-inter"
                   >
                     {link}
                   </button>
@@ -34,7 +34,7 @@ const Footer = () => {
           </div>
           
           <div>
-            <h4 className="text-lg font-semibold mb-4">Connect With Me</h4>
+            <h4 className="text-lg font-playfair font-semibold mb-4">Connect With Me</h4>
             <div className="flex space-x-4 mb-4">
               <a
                 href="mailto:winstoneothis@gmail.com"
@@ -69,7 +69,7 @@ const Footer = () => {
                 <Twitter className="w-5 h-5" />
               </a>
             </div>
-            <p className="text-gray-300 text-sm">
+            <p className="text-gray-300 text-sm font-inter">
               Email: winstoneothis@gmail.com<br />
               Phone: +254-705-246-944
             </p>
@@ -77,7 +77,7 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-gray-700 pt-8 text-center">
-          <p className="text-gray-300 flex items-center justify-center">
+          <p className="text-gray-300 flex items-center justify-center font-inter">
             Made with <Heart className="w-4 h-4 mx-2 text-red-500" /> by Winstone Owino © {currentYear}
           </p>
         </div>

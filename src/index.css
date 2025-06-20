@@ -84,10 +84,9 @@
   }
 
   body {
-    @apply bg-white text-zone-dark font-sans antialiased;
+    @apply bg-white text-zone-dark font-inter antialiased;
     font-size: 16px;
     line-height: 1.6;
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
   }
 
   html {
@@ -95,12 +94,12 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-bold tracking-tight;
+    @apply font-playfair font-bold tracking-tight;
     line-height: 1.2;
   }
 
   p {
-    @apply leading-relaxed;
+    @apply leading-relaxed font-inter;
   }
 }
 
@@ -124,6 +123,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    @apply font-playfair;
   }
   
   .hero-gradient {

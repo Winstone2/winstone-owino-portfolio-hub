@@ -45,7 +45,7 @@ const Header = () => {
     <header className="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
       <div className="container mx-auto px-6 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold gradient-text">
+          <div className="text-2xl font-playfair font-bold gradient-text">
             Winstone Owino
           </div>
 
@@ -55,7 +55,7 @@ const Header = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className={`nav-circle px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
+                className={`nav-circle px-4 py-2 rounded-full text-sm font-inter font-medium transition-all duration-300 ${
                   activeSection === item.id
                     ? 'text-white bg-zone-blue'
                     : 'text-zone-dark hover:text-white'
@@ -83,7 +83,7 @@ const Header = () => {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className={`text-left px-4 py-2 rounded-lg transition-colors duration-200 ${
+                  className={`text-left px-4 py-2 rounded-lg font-inter transition-colors duration-200 ${
                     activeSection === item.id
                       ? 'bg-zone-blue text-white'
                       : 'text-zone-dark hover:bg-gray-100'

@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { ChevronDown, Download } from 'lucide-react';
 
@@ -29,25 +30,25 @@ const Hero = () => {
           </div>
           
           <div className="mb-6">
-            <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold mb-4 bg-gradient-to-r from-zone-blue via-zone-purple to-zone-dark-blue bg-clip-text text-transparent animate-slide-up leading-tight">
+            <h1 className="text-5xl md:text-7xl lg:text-8xl font-playfair font-bold mb-4 bg-gradient-to-r from-zone-blue via-zone-purple to-zone-dark-blue bg-clip-text text-transparent animate-slide-up leading-tight">
               Winstone Owino
             </h1>
             <div className="h-1 w-32 bg-gradient-to-r from-zone-blue to-zone-purple mx-auto rounded-full animate-scale-in" style={{ animationDelay: '0.3s' }}></div>
           </div>
           
-          <h2 className="text-2xl md:text-3xl lg:text-4xl text-zone-dark-blue mb-8 animate-slide-up font-medium tracking-wide" style={{ animationDelay: '0.4s' }}>
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-playfair text-zone-dark-blue mb-8 animate-slide-up font-medium tracking-wide" style={{ animationDelay: '0.4s' }}>
             Data Engineer
           </h2>
           
           <div className="flex flex-wrap justify-center gap-3 mb-8 animate-slide-up" style={{ animationDelay: '0.5s' }}>
             {['Digital Health Solutions', 'ETL & Analytics', 'Data Architecture', 'PostgreSQL', 'Data Visualization'].map((skill, index) => (
-              <span key={index} className="bg-white/90 backdrop-blur-sm text-zone-dark-blue px-5 py-3 rounded-full text-sm font-medium border border-zone-blue/20 hover:bg-zone-blue hover:text-white transition-all duration-300 hover:scale-105 shadow-md">
+              <span key={index} className="bg-white/90 backdrop-blur-sm text-zone-dark-blue px-5 py-3 rounded-full text-sm font-inter font-medium border border-zone-blue/20 hover:bg-zone-blue hover:text-white transition-all duration-300 hover:scale-105 shadow-md">
                 {skill}
               </span>
             ))}
           </div>
           
-          <p className="text-xl md:text-2xl text-gray-700 max-w-4xl mx-auto mb-12 leading-relaxed animate-slide-up font-light" style={{ animationDelay: '0.6s' }}>
+          <p className="text-xl md:text-2xl text-gray-700 max-w-4xl mx-auto mb-12 leading-relaxed animate-slide-up font-inter font-light" style={{ animationDelay: '0.6s' }}>
             Transforming complex health data into actionable insights with 
             <span className="font-semibold text-zone-blue"> 3+ years of experience</span> building 
             scalable data pipelines and analytics solutions that drive meaningful health outcomes across Kenya.
@@ -56,14 +57,14 @@ const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-6 justify-center animate-slide-up" style={{ animationDelay: '0.8s' }}>
             <button
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-              className="group bg-gradient-to-r from-zone-blue to-zone-dark-blue text-white px-8 py-4 rounded-full font-semibold hover:from-zone-dark-blue hover:to-zone-purple transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-2 flex items-center justify-center gap-2"
+              className="group bg-gradient-to-r from-zone-blue to-zone-dark-blue text-white px-8 py-4 rounded-full font-inter font-semibold hover:from-zone-dark-blue hover:to-zone-purple transition-all duration-300 shadow-xl hover:shadow-2xl transform hover:-translate-y-2 flex items-center justify-center gap-2"
             >
               <span>Let's Connect</span>
               <ChevronDown className="w-4 h-4 rotate-[-90deg] group-hover:translate-x-1 transition-transform duration-300" />
             </button>
             <a
               href="mailto:winstoneothis@gmail.com"
-              className="group border-2 border-zone-blue text-zone-blue px-8 py-4 rounded-full font-semibold hover:bg-zone-blue hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-2 flex items-center justify-center gap-2"
+              className="group border-2 border-zone-blue text-zone-blue px-8 py-4 rounded-full font-inter font-semibold hover:bg-zone-blue hover:text-white transition-all duration-300 shadow-lg hover:shadow-xl transform hover:-translate-y-2 flex items-center justify-center gap-2"
             >
               <Download className="w-4 h-4 group-hover:scale-110 transition-transform duration-300" />
               <span>Download CV</span>

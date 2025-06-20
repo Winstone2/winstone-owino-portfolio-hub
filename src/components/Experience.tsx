@@ -38,7 +38,7 @@ const Experience = () => {
     <section id="experience" className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">Experience</h2>
+          <h2 className="text-4xl md:text-5xl font-playfair font-bold mb-6 gradient-text">Experience</h2>
           <div className="w-24 h-1 bg-zone-blue mx-auto"></div>
         </div>
         
@@ -48,10 +48,10 @@ const Experience = () => {
               <div className="bg-white rounded-2xl shadow-lg p-8 border-l-4 border-zone-blue hover:shadow-xl transition-shadow duration-300">
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                   <div>
-                    <h3 className="text-2xl font-bold text-zone-dark-blue mb-2">{exp.title}</h3>
-                    <p className="text-xl text-zone-blue font-semibold">{exp.company}</p>
+                    <h3 className="text-2xl font-playfair font-bold text-zone-dark-blue mb-2">{exp.title}</h3>
+                    <p className="text-xl text-zone-blue font-playfair font-semibold">{exp.company}</p>
                   </div>
-                  <div className="flex flex-col md:items-end text-sm text-gray-600 mt-2 md:mt-0">
+                  <div className="flex flex-col md:items-end text-sm text-gray-600 mt-2 md:mt-0 font-inter">
                     <div className="flex items-center mb-1">
                       <Calendar className="w-4 h-4 mr-1" />
                       <span>{exp.period}</span>
@@ -67,7 +67,7 @@ const Experience = () => {
                   {exp.achievements.map((achievement, achIndex) => (
                     <div key={achIndex} className="flex items-start">
                       <TrendingUp className="w-4 h-4 text-zone-blue mr-3 mt-1 flex-shrink-0" />
-                      <p className="text-gray-700 leading-relaxed">{achievement}</p>
+                      <p className="text-gray-700 leading-relaxed font-inter">{achievement}</p>
                     </div>
                   ))}
                 </div>
@@ -78,13 +78,13 @@ const Experience = () => {
         
         <div className="mt-16 text-center">
           <div className="bg-gradient-to-r from-zone-blue to-zone-purple rounded-2xl p-8 text-white animate-scale-in">
-            <h3 className="text-2xl font-bold mb-4">Projects and Achievements</h3>
+            <h3 className="text-2xl font-playfair font-bold mb-4">Projects and Achievements</h3>
             <div className="max-w-3xl mx-auto">
               <div className="flex items-center justify-center mb-4">
                 <TrendingUp className="w-6 h-6 mr-2" />
-                <span className="text-lg font-semibold">Dashboard Expansion Initiative</span>
+                <span className="text-lg font-playfair font-semibold">Dashboard Expansion Initiative</span>
               </div>
-              <p className="text-lg leading-relaxed">
+              <p className="text-lg leading-relaxed font-inter">
                 Enabled dashboard access and analytics for 15 SCHMTs, reduced data blackout zones 
                 and enabled full data visibility across health management teams.
               </p>

@@ -46,7 +46,7 @@ const Projects = () => {
     <section id="projects" className="py-20 bg-white">
       <div className="container mx-auto px-6">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 gradient-text">Featured Projects</h2>
+          <h2 className="text-4xl md:text-5xl font-playfair font-bold mb-6 gradient-text">Featured Projects</h2>
           <div className="w-24 h-1 bg-zone-blue mx-auto"></div>
         </div>
         
@@ -63,21 +63,21 @@ const Projects = () => {
                     {project.icon}
                   </div>
                   <div className="text-right">
-                    <div className="text-sm opacity-90">Impact</div>
-                    <div className="font-bold">{project.metrics}</div>
+                    <div className="text-sm opacity-90 font-inter">Impact</div>
+                    <div className="font-playfair font-bold">{project.metrics}</div>
                   </div>
                 </div>
-                <h3 className="text-xl font-bold mb-2">{project.title}</h3>
+                <h3 className="text-xl font-playfair font-bold mb-2">{project.title}</h3>
               </div>
               
               <div className="p-6">
-                <p className="text-gray-600 leading-relaxed mb-6">{project.description}</p>
+                <p className="text-gray-600 leading-relaxed mb-6 font-inter">{project.description}</p>
                 
                 <div className="mb-6">
-                  <h4 className="text-sm font-semibold text-zone-dark-blue mb-3">Key Achievements</h4>
+                  <h4 className="text-sm font-playfair font-semibold text-zone-dark-blue mb-3">Key Achievements</h4>
                   <ul className="space-y-2">
                     {project.achievements.map((achievement, achIndex) => (
-                      <li key={achIndex} className="text-sm text-gray-600 flex items-start">
+                      <li key={achIndex} className="text-sm text-gray-600 flex items-start font-inter">
                         <div className="w-1.5 h-1.5 bg-zone-blue rounded-full mr-2 mt-2 flex-shrink-0"></div>
                         {achievement}
                       </li>
@@ -86,12 +86,12 @@ const Projects = () => {
                 </div>
                 
                 <div className="mb-6">
-                  <h4 className="text-sm font-semibold text-zone-dark-blue mb-3">Technologies Used</h4>
+                  <h4 className="text-sm font-playfair font-semibold text-zone-dark-blue mb-3">Technologies Used</h4>
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech, techIndex) => (
                       <span 
                         key={techIndex}
-                        className="bg-gray-100 text-zone-dark px-3 py-1 rounded-full text-xs font-medium"
+                        className="bg-gray-100 text-zone-dark px-3 py-1 rounded-full text-xs font-inter font-medium"
                       >
                         {tech}
                       </span>
@@ -99,7 +99,7 @@ const Projects = () => {
                   </div>
                 </div>
                 
-                <button className="w-full bg-zone-blue text-white py-3 rounded-lg font-semibold hover:bg-zone-dark-blue transition-colors duration-200 flex items-center justify-center">
+                <button className="w-full bg-zone-blue text-white py-3 rounded-lg font-inter font-semibold hover:bg-zone-dark-blue transition-colors duration-200 flex items-center justify-center">
                   <ExternalLink className="w-4 h-4 mr-2" />
                   View Details
                 </button>

@@ -75,11 +75,11 @@ const Skills = () => {
     <section id="skills" className="py-24 bg-gradient-to-br from-white to-gray-50">
       <div className="container mx-auto px-6">
         <div className="text-center mb-20">
-          <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-zone-blue to-zone-purple bg-clip-text text-transparent">
+          <h2 className="text-5xl md:text-6xl font-playfair font-bold mb-6 bg-gradient-to-r from-zone-blue to-zone-purple bg-clip-text text-transparent">
             Technical Expertise
           </h2>
           <div className="w-32 h-1 bg-gradient-to-r from-zone-blue to-zone-purple mx-auto rounded-full"></div>
-          <p className="text-xl text-gray-600 mt-6 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 mt-6 max-w-2xl mx-auto font-inter">
             Cutting-edge technologies and frameworks for modern data solutions
           </p>
         </div>
@@ -98,8 +98,8 @@ const Skills = () => {
                   {category.icon}
                 </div>
                 <div className="flex items-center justify-between mb-2">
-                  <h3 className="text-xl font-bold text-zone-dark-blue">{category.title}</h3>
-                  <span className={`px-2 py-1 text-xs font-semibold rounded-full ${
+                  <h3 className="text-xl font-playfair font-bold text-zone-dark-blue">{category.title}</h3>
+                  <span className={`px-2 py-1 text-xs font-inter font-semibold rounded-full ${
                     category.level === 'Expert' ? 'bg-green-100 text-green-800' :
                     category.level === 'Advanced' ? 'bg-blue-100 text-blue-800' :
                     'bg-yellow-100 text-yellow-800'
@@ -111,7 +111,7 @@ const Skills = () => {
               
               <ul className="space-y-3">
                 {category.skills.map((skill, skillIndex) => (
-                  <li key={skillIndex} className="text-gray-600 text-sm flex items-center group-hover:text-gray-800 transition-colors duration-300">
+                  <li key={skillIndex} className="text-gray-600 text-sm flex items-center group-hover:text-gray-800 transition-colors duration-300 font-inter">
                     <div className={`w-2 h-2 bg-gradient-to-r ${category.color} rounded-full mr-3 flex-shrink-0`}></div>
                     <span className="font-medium">{skill}</span>
                   </li>
@@ -122,7 +122,7 @@ const Skills = () => {
         </div>
         
         <div className="text-center">
-          <h3 className="text-3xl font-bold text-zone-dark-blue mb-12">Core Competencies</h3>
+          <h3 className="text-3xl font-playfair font-bold text-zone-dark-blue mb-12">Core Competencies</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {coreCompetencies.map((competency, index) => (
               <div 
@@ -134,7 +134,7 @@ const Skills = () => {
                   <div className="w-12 h-12 bg-gradient-to-r from-zone-blue to-zone-purple rounded-xl flex items-center justify-center text-white group-hover:scale-110 transition-transform duration-300">
                     {competency.icon}
                   </div>
-                  <span className="font-semibold text-gray-800 group-hover:text-zone-blue transition-colors duration-300">
+                  <span className="font-inter font-semibold text-gray-800 group-hover:text-zone-blue transition-colors duration-300">
                     {competency.text}
                   </span>
                 </div>
