@@ -1,12 +1,13 @@
 
 import React from 'react';
-import { MapPin, Phone, Mail, Award, Calendar, Users } from 'lucide-react';
+import { MapPin, Phone, Mail, Award, Calendar, Users, Database, TrendingUp } from 'lucide-react';
 
 const About = () => {
   const stats = [
     { icon: <Calendar className="w-6 h-6" />, label: "Years Experience", value: "3+" },
     { icon: <Users className="w-6 h-6" />, label: "Teams Supported", value: "15+" },
-    { icon: <Award className="w-6 h-6" />, label: "Accuracy Improvement", value: "90%" }
+    { icon: <TrendingUp className="w-6 h-6" />, label: "Accuracy Improvement", value: "90%" },
+    { icon: <Database className="w-6 h-6" />, label: "Data Pipelines", value: "25+" }
   ];
 
   return (
@@ -33,30 +34,30 @@ const About = () => {
             
             <div className="space-y-6 text-gray-700 leading-relaxed">
               <p className="text-lg">
-                As a seasoned Data Engineer with over 3 years of specialized experience in digital health environments, 
-                I've dedicated my career to transforming complex healthcare data into powerful, actionable insights 
+                As a dedicated Data Engineer with over 3 years of specialized experience in digital health environments, 
+                I focus on transforming complex healthcare data into powerful, actionable insights 
                 that drive community health programs across Kenya.
               </p>
               
               <p className="text-lg">
                 My expertise spans the complete data lifecycle—from designing robust ETL pipelines and optimizing 
-                data warehouses to creating intuitive analytics dashboards that empower health management teams 
-                to make data-driven decisions.
+                PostgreSQL databases to creating intuitive analytics dashboards that empower health management teams 
+                to make informed, data-driven decisions.
               </p>
               
               <p className="text-lg">
-                I take pride in my track record of increasing data reporting accuracy by 90% and enabling 
-                comprehensive data visibility for health teams, directly contributing to improved community 
-                health outcomes.
+                I take pride in my track record of increasing data reporting accuracy by 90%, implementing 
+                scalable data architectures, and enabling comprehensive data visibility for health teams, 
+                directly contributing to improved community health outcomes.
               </p>
             </div>
             
-            <div className="mt-8 grid grid-cols-3 gap-4">
+            <div className="mt-8 grid grid-cols-2 md:grid-cols-4 gap-4">
               {stats.map((stat, index) => (
-                <div key={index} className="text-center p-4 bg-white rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition-shadow duration-300">
+                <div key={index} className="text-center p-4 bg-white rounded-xl shadow-md border border-gray-100 hover:shadow-lg transition-all duration-300 hover:scale-105">
                   <div className="text-zone-blue mb-2 flex justify-center">{stat.icon}</div>
                   <div className="text-2xl font-bold text-zone-dark-blue">{stat.value}</div>
-                  <div className="text-sm text-gray-600">{stat.label}</div>
+                  <div className="text-xs text-gray-600 leading-tight">{stat.label}</div>
                 </div>
               ))}
             </div>
